@@ -1,0 +1,22 @@
+{
+  "name": "productospanacash",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "node-cache": "^5.1.2",
+    "node-datetime": "^2.1.2",
+    "npx": "^10.2.2",
+    "uuid": "^8.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "author": "Leidy",
+  "license": "ISC"
+}
