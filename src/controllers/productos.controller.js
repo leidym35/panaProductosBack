@@ -8,10 +8,8 @@ let dataProductos = []
 
 controller.post = (req, res) => {
     const { name, description, quantity, warrantly, price, status } = req.body
-    
-    if(typeof quantity==='number' && typeof price==="number"){
-       let str=quantity.toString()
-        if(str.length>=11){
+
+        if(quantity.length>=11){
             res.status(400).json({
                 message: 'quantity invalido'
             });
@@ -29,11 +27,6 @@ controller.post = (req, res) => {
             dataProductos.push(data)
             res.send("recibido")
         }
-    }else{
-        res.status(400).json({
-            message: 'tipo de dato invalido'
-        });
-    }
 }
 
 controller.get = (req, res) => {
